@@ -278,26 +278,58 @@ footer > div{
 }
 
 @media screen and (max-width: 1300px) {
-    .nav{
+    .nav {
         max-width: 90vw;
     }
-    .first{
-        flex-wrap: wrap;
+
+    .first {
+        flex-direction: column;
+        text-align: center;
     }
-    .footer{
-        grid-template-columns: 1fr 1fr;
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .hero span:first-child{
+
+    .hero span:first-child {
         font-size: 32px;
     }
-    .hero span:nth-child(2){
+
+    .hero span:nth-child(2),
+    .hero span:nth-child(3) {
         font-size: 18px;
     }
-    .hero span:nth-child(3){
-        font-size: 18px;
-    }
-    .hero-buttons{
+
+    .hero-buttons {
         flex-direction: column;
     }
 
+    .main input,
+    .end input {
+        padding: 7px 14px 8px 14px;
+    }
+
+    .first > div,
+    .faq,
+    .end {
+        max-width: 90vw;
+        margin: auto;
+    }
+
+    .secimg img,
+    .secimg video {
+        width: 100%;
+        margin-right: 0;
+        right: unset;
+    }
+
+    #st1,
+    #vd2 {
+        width: 100%;
+        right: unset;
+    }
+
+    .faqbox {
+        width: 100%;
+    }
 }
